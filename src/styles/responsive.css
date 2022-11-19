@@ -1,0 +1,191 @@
+    header #menu {
+        display: none;
+    }
+    
+    @media screen and (max-width: 499px) {
+        body {
+            min-width: 300px;
+        }
+        .nav {
+            width: 250px;
+            z-index: 10;
+            position: absolute;
+            background-color: yellow;
+            transform: translate(-250px, 0);
+            transition: transform 0.3s ease;
+        }
+        header {
+            height: 90px;
+        }
+        header #logo {
+            line-height: 40px;
+        }
+        header #menu {
+            display: block;
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            text-align: center;
+            text-decoration: none;
+            min-width: 44px;
+            min-height: 44px;
+            line-height: 44px;
+        }
+        .open {
+            transform: translate(0, 0);
+        }
+        .nav__item {
+            display: list-item;
+            border-bottom: 1 px solid black;
+            width: 100%;
+            text-align: left;
+        }
+        main {
+            width: fit-content;
+        }
+        .hero {
+            background-position: 0 0;
+            background-image: url('../public/images/hero-image_1-small.jpg');
+        }
+        main .content .restos {
+            display: grid;
+            grid-template-columns: auto;
+            grid-row-gap: 35px;
+            grid-column-gap: 16px;
+        }
+        .resto-detail {
+            margin-left: -5px;
+            width: 100%;
+            text-align: justify;
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+        .resto-detail .resto__image {
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 10px;
+            max-width: 200px;
+            max-height: 200px;
+            border: 2px solid #54BAB9;
+            border-radius: 7px;
+        }
+        .resto .resto__info h4 {
+            width: 70%;
+            margin: 8px 0;
+        }
+        .cust__review {
+            width: 100%;
+            margin-left: 0;
+            background-color: #e2ca9f;
+            border: 2px solid #54BAB9;
+            border-radius: 6px;
+            padding: 6px;
+        }
+        #cust_review_title {
+            padding-left: 0;
+            font-size: 18px;
+        }
+    }
+    
+    @media screen and (min-width: 500px) {
+        main {
+            width: fit-content;
+        }
+        main .content .restos {
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-row-gap: 40px;
+            grid-column-gap: 30px;
+        }
+        .hero {
+            background-position: 0 0;
+        }
+        .resto-detail {
+            margin-left: -5px;
+            padding: 10px;
+            width: 100%;
+            text-align: justify;
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+        .resto-detail .resto__image {
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 10px;
+            max-width: 200px;
+            max-height: 200px;
+            border: 2px solid #54BAB9;
+            border-radius: 7px;
+        }
+        .resto .resto__info h4 {
+            width: 70%;
+            margin: 8px 0;
+        }
+        .cust__review {
+            width: 100%;
+            margin-left: 0;
+            background-color: #e2ca9f;
+            border: 2px solid #54BAB9;
+            border-radius: 6px;
+            padding: 6px;
+        }
+        #cust_review_title {
+            padding-left: 0;
+            font-size: 18px;
+        }
+    }
+    
+    @media screen and (min-width: 900px) {
+        main {
+            width: fit-content;
+        }
+        .hero {
+            background-image: url('../public/images/hero-image_1-large.jpg');
+        }
+        main .content .restos {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-row-gap: 40px;
+            grid-column-gap: 25px;
+        }
+        .resto-detail {
+            width: 100%;
+            max-width: 800px;
+            display: flex;
+            text-align: justify;
+            margin: 10px;
+        }
+        .resto-detail .resto__image {
+            width: 100%;
+            max-width: 400px;
+            max-height: 400px;
+            border: 2px solid #54BAB9;
+            border-radius: 10px;
+            margin-right: 25px;
+        }
+        .resto .resto__info h4 {
+            width: 400px;
+            margin: 8px 0;
+        }
+        .cust__review {
+            width: 100%;
+            margin-left: 10px;
+            background-color: #e2ca9f;
+            border: 2px solid #54BAB9;
+            border-radius: 6px;
+            padding: 6px;
+            flex: none;
+        }
+        #cust_review_title {
+            margin-left: 10px;
+            font-size: 18px;
+        }
+    }
+    
+    @media screen and (min-width: 1200px) {
+        .hero {
+            min-width: 1000px;
+        }
+    }
